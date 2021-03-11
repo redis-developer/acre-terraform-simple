@@ -23,7 +23,7 @@ There are zero modules configured, and the endpoint is publicly accessible.
     
 ### Tools
 
-1. Tested with Terraform CLI 0.14.7
+1. Tested with Terraform CLI 0.14.8
 
 ## Getting started
 
