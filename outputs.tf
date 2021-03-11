@@ -1,6 +1,7 @@
 locals {
   redisgeek_config = {
-    hostname = azurerm_redis_enterprise_cluster.redisgeek.connection
+    cluster = azurerm_redis_enterprise_cluster.redisgeek.*
+    database = azurerm_redis_enterprise_database.redisgeek.*
   }
 }
 
