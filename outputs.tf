@@ -6,6 +6,6 @@ locals {
 }
 
 output "redisgeek_config" {
-  value = jsonencode(local.redisgeek_config)
+  value = local.redisgeek_config
   sensitive = false
 }
