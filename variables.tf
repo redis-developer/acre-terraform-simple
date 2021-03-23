@@ -1,20 +1,20 @@
 variable "client_id" {
   description = "Service Principal to use (az ad sp create-for-rbac ...)"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "client_secret" {
   description = "Client Secret for Service Principal"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "acre_sku" {
-  type = string
+  type    = string
   default = "Enterprise_E10-2"
 }
 
 variable "azure_redis_enterprise_database_clustering_policy" {
-  type = string
+  type    = string
   default = "EnterpriseCluster"
 }
 
@@ -27,7 +27,7 @@ variable "tenant_id" {
 }
 
 variable "location" {
-  type = string
+  type    = string
   default = "East US"
 }
 
