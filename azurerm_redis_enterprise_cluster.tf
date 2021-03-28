@@ -4,5 +4,5 @@ resource "azurerm_redis_enterprise_cluster" "redisgeek" {
   location            = azurerm_resource_group.redisgeek.location
   zones               = [1, 2, 3]
   sku_name            = var.acre_sku
-  tags                = merge(var.tags, { owner = module.azure-base.redisgeek_config.sp })
+  tags                = merge(var.tags, { owner = local.sp_display_name })
 }
