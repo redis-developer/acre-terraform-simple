@@ -18,6 +18,16 @@ variable "azure_redis_enterprise_database_clustering_policy" {
   default = "EnterpriseCluster"
 }
 
+variable "deployment_mode" {
+  type    = string
+  default = "Incremental"
+}
+
+variable "keyvault_template_path" {
+  description = "Path to ARM template being sourced"
+  default     = "./ARM/keyvault.json"
+}
+
 variable "subscription_id" {
   type = string
 }

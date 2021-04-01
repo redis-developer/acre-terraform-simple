@@ -15,3 +15,17 @@ resource "random_string" "acre_name" {
   special = false
   upper   = false
 }
+
+resource "random_string" "key_vault_name" {
+  length  = 8
+  number  = false
+  special = false
+  upper   = false
+}
+
+resource "random_string" "secret_name" {
+  length  = 8
+  number  = false
+  special = false
+  upper   = false
+}
