@@ -8,8 +8,9 @@ Azure Cache for Redis Enterprise (ACRE)
     - _Service Principal_
     - **Resource Group**
       - **Redis Enterprise Cluster**
+      - **KeyVault**
 
-There are zero modules configured, and the endpoint is publicly accessible.
+There are zero Redis Modules configured, and the endpoint is publicly accessible.
 
 ## Prerequisites
 
@@ -23,7 +24,7 @@ There are zero modules configured, and the endpoint is publicly accessible.
     
 ### Tools
 
-1. Tested with Terraform CLI 0.14.8
+1. Tested with Terraform CLI 0.14.9
 
 ## Getting started
 
