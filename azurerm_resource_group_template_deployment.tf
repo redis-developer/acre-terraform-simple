@@ -2,7 +2,7 @@ resource "azurerm_resource_group_template_deployment" "acre" {
   name                = format("redisgeek-%s", random_string.acre_name.result)
   resource_group_name = azurerm_resource_group.redisgeek.name
   deployment_mode     = var.deployment_mode
-  template_content = templatefile(var.keyvault_template_path, {
+  template_content = templatefile("${path.module}/ARM/keyvault.json", {
     clusterName              = azurerm_redis_enterprise_cluster.redisgeek.name,
     objectId = local.object_id,
     servicePrincipalObjectId = var.client_id,
