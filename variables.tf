@@ -25,7 +25,7 @@ variable "deployment_mode" {
 
 variable "keyvault_template_path" {
   description = "Path to ARM template being sourced"
-  default     = "./ARM/keyvault.json"
+  default     = "ARM/keyvault.json"
 }
 
 variable "subscription_id" {
