@@ -43,7 +43,7 @@
         "accessPolicies": [
           {
             "tenantId": "[subscription().tenantId]",
-            "objectId": "[${objectId}]",
+            "objectId": "${objectId}",
             "applicationId": "[parameters('servicePrincipalObjectId')]",
             "permissions": {
               "keys":"[parameters('secretsPermissions')]",
