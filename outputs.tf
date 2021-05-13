@@ -4,8 +4,7 @@ locals {
     database = azurerm_redis_enterprise_database.redisgeek.*
   }
   secrets = {
-    keyVaultName = random_string.key_vault_name.result
-    secretName = random_string.secret_name.result
+    primary_access_key = data.azurerm_key_vault_secret.primaryKey
   }
   sp_display_name = jsondecode(module.azure-base.redisgeek_config).sp
   object_id = jsondecode(module.azure-base.redisgeek_config).oid
@@ -18,5 +17,5 @@ output "redisgeek_config" {
 
 output "secrets" {
   value = local.secrets
-  sensitive = false
+  sensitive = true
 }
