@@ -15,7 +15,7 @@ This is a template to get started with the 'azurerm_redis_enterprise_cluster' re
 
 There are zero Redis Modules configured, and the endpoint is publicly accessible.
 
-## | [Getting Started](#getting-started) | [About](#about the project) | [License](#license) |
+## [Getting Started](#getting-started) | [About](#about-the-project) | [License](#license)
 
 ## Getting Started
 
