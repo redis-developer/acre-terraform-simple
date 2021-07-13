@@ -118,4 +118,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/redisgeek/acre-terraform-simple.svg?style=for-the-badge
 [issues-url]: https://github.com/redisgeek/acre-terraform-simple/issues
 [license-shield]: https://img.shields.io/github/license/redisgeek/acre-terraform-simple.svg?style=for-the-badge
-[license-url]: https://github.com/redisgeek/acre-terraform-simple/blob/master/LICENSE.txt
+[license-url]: https://github.com/redisgeek/acre-terraform-simple/blob/main/LICENSE
